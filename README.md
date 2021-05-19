@@ -11,6 +11,7 @@ We propose an optimization method composed of an optimization model and two sets
 ## Repository Content
 This git repository is organized in the following directories:
 - `./graphs/`: results of the ML models with different prediction targets (scatter plots depicting predicted versus true target);
+- `./DT10_err_dists/`: graphs for the distribution of the prediction error for the three targets obtained using the same ML models embedded in the optimization model (Decision Trees with maximum depth == 10); the predictions were done on the same validation set using during the training phase;
 - `./experimental_results/`: results of the trials conducted using the optimizations models produced during the experimentations; the files containing the suffix "_std*_perc*" represent trials conducted using models with increased robustness (see section 3.4); these results are organized in:
   - `./experimental_results/algorithm_configuration_only_model`: csv files (both for ANTICIPATE and CONTINGENCY) for the trials, expressed in terms of imposed instance, imposed bounds on time and memory (if any), optimized decisional variable and resulting values for time, memory and cost; 
   - `./experimental_results/algorithm_selection_configuration_model`: csv files following the same structure described above, with the exception that since we're also selecting the best algorithm, they contain the targets and the decisional variable for both algorithms, and also two additional columns, each one representing the binary variable for the corresponding algorithm (see Eq. 1 and 2);
