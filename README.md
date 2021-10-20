@@ -10,7 +10,8 @@ We propose an optimization method composed of an optimization model and two sets
 
 ## Repository Content
 This git repository is organized in the following directories:
-- `./graphs/`: results of the ML models with different prediction targets (scatter plots depicting predicted versus true target);
+- `./graphs/machine_learning_models/`: results of the ML models with different prediction targets (scatter plots depicting predicted versus true target);
+- `./graphs/hardware_dimensioning_model/`: results of the ML models with different prediction targets (scatter plots depicting predicted versus true target);
 - `./DT10_err_dists/`: graphs for the distribution of the prediction error for the three targets obtained using the same ML models embedded in the optimization model (Decision Trees with maximum depth == 10); the predictions were done on the same validation set using during the training phase;
 - `./NN_and_DT_err_dists/`: histograms for the distribution of the prediction error for the three targets obtained using DT10 and NN; the predictions were done on the same validation set using during the training phase;
 - `./experimental_results/`: results of the trials conducted using the optimizations models produced during the experimentations; the files containing the suffix "_std*_perc*" represent trials conducted using models with increased robustness (see section 3.4); these results are organized in:
