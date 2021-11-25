@@ -11,7 +11,9 @@ We propose an optimization method composed of an optimization model and two sets
 ## Repository Content
 This git repository is organized in the following directories:
 - `./graphs/machine_learning_models/`: performance graphs for ML models with different prediction targets (scatter plots depicting predicted versus true target);
-- `./graphs/hardware_dimensioning_model/`: boxplots for the HW dimensioning model;
+- `./graphs/hardware_dimensioning_model/`: graphs for the HW dimensioning model;
+  -  `./graphs/hardware_dimensioning_model/singlecore`: boxplots for the HW dimensioning model in its simplest variant;
+  -  `./graphs/hardware_dimensioning_model/multicore`: scatter plots and boxplots for a variant of the model in which we introduced a simulation of parallelization; the graphs are available for two versions of the model, one with embedded Decision Trees with maximum depth == 10, and one with maximum depth == 15;
 - `./DT10_err_dists/`: graphs for the distribution of the prediction error for the three targets obtained using the same ML models embedded in the optimization model (Decision Trees with maximum depth == 10); the predictions were done on the same validation set using during the training phase;
 - `./NN_and_DT_err_dists/`: histograms for the distribution of the prediction error for the three targets obtained using DT10 and NN; the predictions were done on the same validation set using during the training phase;
 - `./experimental_results/`: results of the trials conducted using the optimizations models produced during the experimentations; the files containing the suffix "_std*_perc*" represent trials conducted using models with increased robustness (see section 3.4); these results are organized in:
